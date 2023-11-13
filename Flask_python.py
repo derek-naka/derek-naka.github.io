@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return render_template("Flask_html.html")
+    return render_template("index.html")
 
 
 def pass_fail_function(image):
