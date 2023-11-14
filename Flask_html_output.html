@@ -6,6 +6,8 @@
   <body>
     <p>File uploaded successfully</p>
 
+    <p>Output of Files:</p>
+
     {% for table in tables %} {{titles[loop.index]}} {{ table|safe }} {% endfor
     %}
   </body>
