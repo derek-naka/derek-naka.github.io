@@ -26,7 +26,6 @@ def success():
         for file in files:
             output = pass_fail_function(file)
             df.loc[len(df.index)] = [file.filename, output[0], output[1]]
-            # file.save(file.filename)
         return render_template(
             "Flask_html_output.html",
             tables=[df.to_html(classes="data")],
