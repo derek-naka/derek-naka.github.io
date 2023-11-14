@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>success</title>
+    <link rel="stylesheet" href="Flask_css.css" />
+  </head>
+  <body>
+    <p>File uploaded successfully</p>
+
+    <p>Output of Files:</p>
+
+    {% for table in tables %} {{titles[loop.index]}} {{ table|safe }} {% endfor
+    %}
+  </body>
+</html>
